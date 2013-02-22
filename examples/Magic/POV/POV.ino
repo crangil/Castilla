@@ -1,13 +1,3 @@
-/*
-POV (Persistence of Vision)
-
-This is a toy consisting of a row of 5 LEDs(VU-meter).
-It is a proof of concept of the illusion of a text display
-using little effort. The user will have to wave the row of LEDs
-quickly back and forth to achieve the effect.
-The button helps change settings for the display of this effect.
-*/
-
 #include <Castilla.h>
 /*
 An array of pin numbers to which LEDs are attached
