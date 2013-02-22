@@ -1,12 +1,3 @@
-/*  Drawdio
-*
-*  Make everything(almost) into a music instrument!
-*  Inspiration from Jay Siver's DRAWDIO
-*
-*  http://web.media.mit.edu/~silver/drawdio/
-*
-*/
-
 #include <CapacitiveSensor.h>
 #include "pitches.h"
 #include <Castilla.h>
