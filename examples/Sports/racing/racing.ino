@@ -1,12 +1,3 @@
-/*
-Racing
-
-Run as fast as you can in this game. Tap two sensors
-with your hands repeatedly, and you can see the progress
-through the scoreboard made of a line of LEDs. When you
-finally made it to the end, all LEDs on the scoreboard
-will start blinking for your victory. 
-*/
 #include <CapacitiveSensor.h>
 #include <Castilla.h>
 
@@ -41,6 +32,7 @@ void setup(){
   leftFoot.config(capacitiveSensorThreshold);
   rightFoot.config(capacitiveSensorThreshold);
 }
+
 void loop(){
   //Wait for the left foot to be pressed
   leftFoot.pressed();
@@ -61,5 +53,4 @@ void loop(){
     //and reset the game
     score=0;
   }
-  
 }

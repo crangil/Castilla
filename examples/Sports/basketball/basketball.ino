@@ -1,12 +1,3 @@
-/*
-Basketball
-
-In this game you get to practise your ball shooting accuracy. An
-LDR (light dependant resistor) will count your score and a row of
-LEDs will display the score for you.
-*/
-
-
 #include <Castilla.h>
 #include "pitches.h"
 /*
@@ -28,7 +19,6 @@ void setup(){
   vuMeter.begin(); //does the same as pinMode, LEDs are outputs
   
   ldr.config(837, 600); //first run LDRtest example to see what values you need to put here
-  
 }
 
 void loop(){
@@ -46,11 +36,8 @@ void loop(){
     delay(50);
   }
   
-  
-
   if(score>=pinCount) startOver(); //If the score equals the amount of LEDs you start over
 }
-
 
 void startOver(){
   score=0; //reset the score
@@ -61,6 +48,5 @@ void startOver(){
   piezo.play(numberOfNotes, melody, noteDurations, 1);
   
   vuMeter.blinkAll(50,10);
-  
 }
 
