@@ -1,12 +1,3 @@
-/*
-React
-In this game your reaction skills are tested. 
-The game consists of 3 LEDs and 3 capacitive 
-sensors. When one LED lights up, you need to 
-touch the belonging capacitive sensor as fast 
-as you can. If you fail, it’s game over.
-*/
-
 #include <CapacitiveSensor.h>
 #include <Castilla.h>
 #include "pitches.h"
@@ -25,8 +16,6 @@ int reactTime = 500;
 // the piezo connected to digital pin 8
 Melody piezo = Melody(8); 
 
-
-
 void setup(){
   LEDs.config(pinCount, ledPins); 
   LEDs.begin();
@@ -39,7 +28,6 @@ void setup(){
   pad[0].config(900);
   pad[1].config(900);
   pad[2].config(900);
-  
 }
 
 void loop(){    
@@ -55,7 +43,7 @@ void loop(){
   if(pad[target].pressed(reactTime)){
     LEDs.off(target);
     
-	//Play the winning sound
+    //Play the winning sound
     int melody[] = { NOTE_GS4, NOTE_C5};
     int noteDurations[] = { 8, 8};
     int numberOfNotes = 2;

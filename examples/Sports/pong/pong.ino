@@ -1,14 +1,3 @@
-/*
-Pong
-
-This is a small pong game consisting of a row of 5 LEDs(VU-meter)
-and one button on each side of the row. Play it with a friend, both
-of you should have a button in hand. When the game starts, the 
-“pong” will fly towards you. Press your button to hit the pong when
-it reaches the end, so it bounces to your friend. If either of you
-fail to hit “pong” in time, the other player will be the winner. 
-*/
-
 #include <Castilla.h>
 /*
 An array of pin numbers to which LEDs are attached
