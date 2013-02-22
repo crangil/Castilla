@@ -1,12 +1,3 @@
-/*
-*  Camera Robot
-* This camera robot will help you spy. Mount a web camera on the pan tilt 
-* construction and you will be able to control the direction of it using 
-* a small joystick. You can monitor everything from the computer and when 
-* you see something suspicious, take a picture of it!
-*
-*/
-
 #include <Castilla.h>
 #include <Servo.h>
 
